@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Grey500: hsl(234, 12%, 34%);
+    --Grey400: hsl(212, 6%, 44%);
+}
+
+html{
+    background-color: var(--white);
+    font-family: "Poppins", sans-serif;
+}
+/* div {
+    border: 1px solid black;
+} */
+/* - Weights: 200, 400, 600 */
+
+
+
+.card {
+ /*    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem; */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 11px 4px rgba(0,0,0,0.20);
+    padding: 2rem;
+    margin-block-end: 2rem;
+    width: 100%;
+}
+.cards
+{
+    width: 90%;
+    margin: auto;
+    max-width: 80rem;
+}
+
+.builder {
+    border-top: 0.3rem solid var(--Red);
+}
+.karma {
+    border-top: 0.3rem solid var(--Orange);
+}
+.calculator {
+    border-top: 0.3rem solid var(--Blue);
+}
+.supervisor {
+    border-top: 0.3rem solid var(--Cyan);
+}
+.small {
+    font-weight: 200;
+}
+.content {
+    justify-content: center;
+    align-content: center;
+}
+h1,h2 {
+    color: var(--Grey500);
+    font-weight: 600;
+}
+p {
+    font-size: 15px;
+    color: var(--Grey400);
+}
+.title {
+    margin: auto;
+    margin-block-start: 3rem;
+ /*    align-content: center; */
+    text-align: center;
+}
+
+@media (max-width:48em)
+{
+    
+    .content{
+        width: 90%;
+        margin: auto;
+        display: block;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .cards{
+        display: block;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width:63.9em){
+        .title {
+        max-width: 35rem;
+    }
+
+    
+}
+
+@media (min-width:64em) {
+    .title {
+        width: 35rem;
+    }
+
+    .cards {
+    display: flex;
+
+}
+
+/*     .card {
+        width: 90%;
+    } */
+         .col1,.col3,.col2 {
+    padding: 1rem;
+}
+}
+
+span {
+    color: var(--Grey500);
+    font-weight: 400;
+
+}
+
+.title-2 {
+    margin-block-start: 1rem;
+    margin-block-end: 2rem;
+}
+
+.col1,.col3 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.col1,.col3,.col2 {
+    flex:1;
+}
+
+/* .icon {
+    margin-block-start: 2rem;
+} */
+
+.icon-box {
+    display: flex;
+    justify-content: end;
+    align-content: end;
+    margin-block-start: 2rem;
+    margin-block-end: 1rem;
+}
+
+h2 {
+    line-height: 180%;
+}
